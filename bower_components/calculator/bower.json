@@ -2,6 +2,7 @@
   "name": "qf-calculator",
     "private": true,
     "dependencies": {
+      "webcomponentsjs": "Polymer/webcomponentsjs#master",
       "polymer": "Polymer/polymer#master"
     }
 }

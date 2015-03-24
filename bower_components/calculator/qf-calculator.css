@@ -1,0 +1,40 @@
+div.container{
+  height: 100%;
+  width: 100%;
+}
+
+.row{
+  margin: 2%;
+  width: 96%;
+  height: 16.66%;
+}
+
+div.elem{
+  display: inline-block;
+  margin-top: 3%;
+  padding: 3% 0%;
+  height: 23%;
+  width: 23%;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.offset{
+  display: inline-block;
+  margin-top: 3%;
+  padding: 3% 0%;
+  height: 23%;
+  width: 49%;
+}
+
+.screen{
+  padding: 3% 0%;
+}
+
+.container.light{
+  border: 3px solid #eee;
+}
+
+.container.dark{
+  border: 3px solid #000;
+}

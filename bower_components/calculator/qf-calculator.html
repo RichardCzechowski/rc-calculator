@@ -1,0 +1,80 @@
+<polymer-element name="qf-calculator" role="calculator" attributes="theme">
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<template>
+<link rel="stylesheet" href="qf-calculator.css">
+<!-- add, subtract, multiply, divide, square root, clear result. -->
+
+<div class="container {{theme}}">
+  <input class="row screen" value="{{ans}}" disabled>
+  <div class="row">
+    <div class="offset">
+    </div>
+    <div id="clear" class="elem">
+      clear
+    </div>
+    <div id="sqrt" class="elem">
+      &radic;
+    </div>
+  </div>
+  <div class="row">
+    <div class="elem num">
+      7
+    </div>
+    <div class="elem num">
+      8
+    </div>
+    <div class="elem num">
+      9
+    </div>
+    <div class="elem">
+      /
+    </div>
+  </div>
+  <div class="row">
+    <div class="elem num">
+      4
+    </div>
+    <div class="elem num">
+      5
+    </div>
+    <div class="elem num">
+      6
+    </div>
+    <div class="elem">
+      X
+    </div>
+  </div>
+  <div class="row">
+    <div class="elem num">
+      1
+    </div>
+    <div class="elem num">
+      2
+    </div>
+    <div class="elem num">
+      3
+    </div>
+    <div class="elem">
+      -
+    </div>
+  </div>
+  <div class="row">
+    <div class="elem num">
+      0
+    </div>
+    <div class="elem">
+      .
+    </div>
+    <div class="elem">
+      =
+    </div>
+    <div class="elem">
+      +
+    </div>
+  </div>
+</div>
+
+</template>
+<script src="qf-calculator.js"></script>
+</polymer-element>

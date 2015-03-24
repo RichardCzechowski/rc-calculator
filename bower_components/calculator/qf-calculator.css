@@ -38,7 +38,7 @@ div.container{
   width: 49%;
 }
 
-.screen{
+#screen{
   font-family: Digital;
   padding: 3% 2%;
   width: 91%;
@@ -46,12 +46,16 @@ div.container{
   text-align: right;
 }
 
+#screen:focus{
+  outline: 0;
+}
+
 /* light theme */
 .container.light{
   background-color: #eee;
 }
 
-div.container.light input.screen{
+div.container.light input#screen{
   background-color: rgba(152, 241, 139, 0.19);
 }
 
@@ -74,7 +78,7 @@ div.container.light div.elem:active{
   background-color: #4d4d4d;
 }
 
-div.container.dark input.screen{
+div.container.dark input#screen{
   background-color: #688e63;
 }
 

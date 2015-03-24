@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="qf-calculator.css">
 
 <div class="container {{theme}}">
-  <input class="row screen" value="{{equation}}">
+  <input id="screen" class="row" on-keypress="{{enter}}" value="{{equation}}" autofocus>
   <div class="row">
     <div on-tap="{{addMem}}" class="elem">
       M+

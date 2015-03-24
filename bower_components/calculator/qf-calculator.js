@@ -1,7 +1,7 @@
 (function(){
   //naive sanitization, would normally use a library
   function sanitizeString(str){
-    str = str.replace(/[A-Za-z]/g, "");
+    str = str.replace(/[A-Za-z\~`!@#$%^&_=}{:;'"<,.>?|]/g, "");
     str = str.replace("√", "Math.sqrt")
     return str.trim();
   }
@@ -10,9 +10,19 @@
     // These default values are overridden
     // by the user's attribute values.
     theme: "light",
-    equation: 0,
+    equation: '',
     isDone: true,
     mem: 0,
+    enter: function(e){
+      //check for enter- equal
+      if (e.keyCode == 13 && !this.isDone){
+        this.equal();
+      }
+      //check for change from input box
+      else if (e.keyCode != 13){
+        this.isDone = false;
+      }
+    },
     calc: function(e){
       var val;
       if (typeof e == 'number'){
@@ -38,18 +48,18 @@
     },
     equal: function(){
       //make sure you can't submit twice, then sanitize and eval
-      if (!this.isDone){
+      if (this.equation != 0){
         this.isDone = true;
         var eq = sanitizeString(this.equation);
         this.equation = eval(eq);
       }
     },
     clear: function(){
-      this.equation = 0;
+      this.equation = '';
       this.isDone = true;
     },
     back: function(){
-      var str = this.equation;
+      var str = this.equation.toString();
       str = str.substring(0, str.length - 1);
       this.equation = str;
     },

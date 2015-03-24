@@ -1,6 +1,15 @@
+/*font probably won't work on chrome */
+@font-face {
+  font-family: 'Digital';
+  src: url('calculator.ttf');
+}
 div.container{
   height: 100%;
   width: 100%;
+  font-size: 4em;
+  -webkit-box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
+  -moz-box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
+  box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
 }
 
 .row{
@@ -9,14 +18,16 @@ div.container{
   height: 16.66%;
 }
 
-div.elem{
+.elem{
   display: inline-block;
   margin-top: 3%;
   padding: 3% 0%;
   height: 23%;
   width: 23%;
-  border: 1px solid #000;
   text-align: center;
+  -webkit-box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
+  -moz-box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
+  box-shadow: 7px 8px 7px -5px rgba(0,0,0,0.43);
 }
 
 .offset{
@@ -28,13 +39,55 @@ div.elem{
 }
 
 .screen{
-  padding: 3% 0%;
+  font-family: Digital;
+  padding: 3% 2%;
+  width: 91%;
+  font-size: 1em;
+  text-align: right;
 }
 
+/* light theme */
 .container.light{
-  border: 3px solid #eee;
+  background-color: #eee;
 }
 
+div.container.light input.screen{
+  background-color: rgba(152, 241, 139, 0.19);
+}
+
+div.container.light div.elem{
+  background-color: #ddd;
+  color: #000;
+  border: 1px solid #c0c0c0;
+}
+
+div.container.light div.elem:hover{
+  background-color: #eee;
+}
+
+div.container.light div.elem:active{
+  background-color: #fff;
+}
+
+/* dark theme */
 .container.dark{
-  border: 3px solid #000;
+  background-color: #4d4d4d;
+}
+
+div.container.dark input.screen{
+  background-color: #688e63;
+}
+
+div.container.dark div.elem{
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #c0c0c0;
+}
+
+div.container.dark div.elem:hover{
+  background-color: #444;
+}
+
+div.container.dark div.elem:active{
+  background-color: #ddd;
 }

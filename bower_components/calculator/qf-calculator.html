@@ -7,6 +7,20 @@
 <div class="container {{theme}}">
   <input class="row screen" value="{{equation}}">
   <div class="row">
+    <div on-tap="{{addMem}}" class="elem">
+      M+
+    </div>
+    <div on-tap="{{subMem}}" class="elem">
+      M-
+    </div>
+    <div on-tap="{{recMem}}" class="elem">
+      MR
+    </div>
+    <div on-tap="{{back}}" label="&radic;(" class="elem">
+      back
+    </div>
+  </div>
+  <div class="row">
     <!-- <div class="offset"> -->
     <!-- </div> -->
     <div on-tap="{{calc}}" label="(" class="elem">

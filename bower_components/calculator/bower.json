@@ -2,5 +2,6 @@
   "name": "qf-calculator",
     "private": true,
     "dependencies": {
+      "polymer": "Polymer/polymer#master"
     }
 }

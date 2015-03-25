@@ -1,24 +1,24 @@
 {
   "name": "rc-calculator",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "authors": [
-      'Richard Czechowski
+      "Richard Czechowski
       ],
     "keywords": [
-      'Polymer',
-    'web-components'
+      "Polymer",
+    "web-components"
       ],
-    "license": 'MIT',
+    "license": "MIT",
     "private": true,
     "dependencies": {
       "webcomponentsjs": "Polymer/webcomponentsjs#master",
       "polymer": "Polymer/polymer#master"
     },
     "ignore": [
-    '**/.*',
-    'node_modules',
-    'bower_components',
-    'test',
-    'tests'
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
       ]
 }

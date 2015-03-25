@@ -1,4 +1,4 @@
-qf-calculator
+rc-calculator
 ===================
 
 <p>This element still needs to be refactored into a Bower-component because it is being used for interview purposes.</p>

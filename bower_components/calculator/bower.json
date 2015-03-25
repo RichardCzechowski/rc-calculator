@@ -1,8 +1,24 @@
 {
-  "name": "qf-calculator",
+  "name": "rc-calculator",
+    "version": "0.0.1",
+    "authors": [
+      'Richard Czechowski
+      ],
+    "keywords": [
+      'Polymer',
+    'web-components'
+      ],
+    "license": 'MIT',
     "private": true,
     "dependencies": {
       "webcomponentsjs": "Polymer/webcomponentsjs#master",
       "polymer": "Polymer/polymer#master"
-    }
+    },
+    "ignore": [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+      ]
 }

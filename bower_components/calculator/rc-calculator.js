@@ -18,32 +18,38 @@
       {val: "addMem", label: "M+"},
       {val: "subMem", label: "M-"},
       {val: "recMem", label: "MR"},
-      {val: "back", label: "back"} ],
+      {val: "back", label: "back"}
+    ],
       [
         {val: "calc", label: "("},
         {val: "calc", label: ")"},
         {val: "clear", label: "clear"},
-        {val: "calc", label: "√("} ],
+        {val: "calc", label: "√("}
+      ],
         [
           {val: "calc", label: "7"},
           {val: "calc", label: "8"},
           {val: "calc", label: "9"},
-          {val: "calc", label: "*"} ],
+          {val: "calc", label: "*"}
+        ],
           [
             {val: "calc", label: "4"},
             {val: "calc", label: "5"},
             {val: "calc", label: "6"},
-            {val: "calc", label: "/"} ],
+            {val: "calc", label: "/"}
+          ],
             [
               {val: "calc", label: "1"},
               {val: "calc", label: "2"},
               {val: "calc", label: "3"},
-              {val: "calc", label: "-"} ],
+              {val: "calc", label: "-"}
+            ],
               [
                 {val: "calc", label: "0"},
                 {val: "calc", label: "."},
                 {val: "equal", label: "="},
-                {val: "calc", label: "+"} ]
+                {val: "calc", label: "+"}
+              ]
     ],
     equation: '',
     isDone: true,
@@ -59,7 +65,6 @@
       }
     },
     calc: function(e){
-      console.log(e);
       var val;
       if (typeof e == 'number'){
         val = e;

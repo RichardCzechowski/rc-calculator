@@ -6,93 +6,17 @@
 
 <div class="container {{theme}}">
   <input id="screen" class="row" on-keypress="{{enter}}" value="{{equation}}" autofocus>
+  <template repeat="{{ row in buttons }}">
   <div class="row">
-    <div on-tap="{{addMem}}" class="elem">
-      M+
+    <template repeat="{{ elem in row }}">
+    <div on-tap="{{doAction}}" value="{{elem.val}}" label="{{elem.label}}" class="elem">
+      {{elem.label}}
     </div>
-    <div on-tap="{{subMem}}" class="elem">
-      M-
-    </div>
-    <div on-tap="{{recMem}}" class="elem">
-      MR
-    </div>
-    <div on-tap="{{back}}" label="&radic;(" class="elem">
-      back
-    </div>
+    </template>
   </div>
-  <div class="row">
-    <!-- <div class="offset"> -->
-    <!-- </div> -->
-    <div on-tap="{{calc}}" label="(" class="elem">
-      (
-    </div>
-    <div on-tap="{{calc}}" label=")" class="elem">
-      )
-    </div>
-    <div on-tap="{{clear}}" class="elem">
-      clear
-    </div>
-    <div on-tap="{{calc}}" label="&radic;(" class="elem">
-      &radic;
-    </div>
-  </div>
-  <div class="row">
-    <div on-tap="{{calc}}" label="7" class="elem">
-      7
-    </div>
-    <div on-tap="{{calc}}" label="8" class="elem">
-      8
-    </div>
-    <div on-tap="{{calc}}" label="9" class="elem">
-      9
-    </div>
-    <div on-tap="{{calc}}" label="/" class="elem">
-      /
-    </div>
-  </div>
-  <div class="row">
-    <div on-tap="{{calc}}" label="4" class="elem">
-      4
-    </div>
-    <div on-tap="{{calc}}" label="5" class="elem">
-      5
-    </div>
-    <div on-tap="{{calc}}" label="6" class="elem">
-      6
-    </div>
-    <div on-tap="{{calc}}" label="*" class="elem">
-      X
-    </div>
-  </div>
-  <div class="row">
-    <div on-tap="{{calc}}" label="1" class="elem">
-      1
-    </div>
-    <div on-tap="{{calc}}" label="2" class="elem">
-      2
-    </div>
-    <div on-tap="{{calc}}" label="3" class="elem">
-      3
-    </div>
-    <div on-tap="{{calc}}" label="-" class="elem">
-      -
-    </div>
-  </div>
-  <div class="row">
-    <div on-tap="{{calc}}" label="0" class="elem">
-      0
-    </div>
-    <div on-tap="{{calc}}" label="." class="elem">
-      .
-    </div>
-    <div on-tap="{{equal}}" class="elem">
-      =
-    </div>
-    <div on-tap="{{calc}}" label="+" class="elem">
-      +
-    </div>
-  </div>
+  </template>
 </div>
+
 </template>
 <script src="qf-calculator.js"></script>
 </polymer-element>
